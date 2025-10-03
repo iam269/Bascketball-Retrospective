@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retrospectivă Baschet</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" href="images/basketball.png" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="brand">Retrospectivă <span class="brand-accent">Baschet</span></div>
+      <ul class="nav-links">
+        <li><a href="#roster">Roster</a></li>
+        <li><a href="#schedule">Calendar</a></li>
+        <li><a href="#stats">Statistici</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Retrospectivă — sezon și jucători</h1>
+        <p class="lead">Design inspirat de tema echipelor profesionale — paletă verde, accente curate. Conținut demo, fără elemente protejate.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#roster">Vezi roster</a>
+          <a class="btn ghost" href="#schedule">Următorul meci</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="roster" class="panel roster-panel">
+      <h2>Roster</h2>
+      <div id="playersGrid" class="players-grid">Se încarcă...</div>
+    </section>
+
+    <section id="schedule" class="panel schedule-panel">
+      <h2>Calendar meciuri</h2>
+      <div class="search-row">
+        <input id="searchInput" placeholder="Caută echipă sau notiță..." />
+      </div>
+      <table id="scheduleTable" class="schedule-table">
+        <thead><tr><th>Data</th><th>Meci</th><th>Scor</th><th>Note</th></tr></thead>
+        <tbody>Se încarcă...</tbody>
+      </table>
+    </section>
+
+    <section id="stats" class="panel stats-panel">
+      <h2>Statistici</h2>
+      <div id="statCards" class="cards"></div>
+      <div class="chart-card">
+        <h3>Puncte / Sezon</h3>
+        <canvas id="pointsChart" height="120"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proiect demo — Retrospectivă Baschet • Date de probă</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

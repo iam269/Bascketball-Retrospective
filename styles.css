@@ -1,0 +1,42 @@
+:root{
+  --bg:#072211; /* deep green */
+  --card:#082916; /* card dark */
+  --accent:#00a14b; /* bright green */
+  --accent-2:#aadfbb; /* pale green */
+  --muted:#9fc7a8;
+  --glass: rgba(255,255,255,0.02);
+  --glass-2: rgba(255,255,255,0.015);
+  --text:#eaf6ee;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial;background:linear-gradient(180deg,var(--bg),#02140a);color:var(--text);margin:0;min-height:100vh}
+.site-header{padding:18px 20px}
+.top-nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-weight:700;font-size:20px}
+.brand-accent{color:var(--accent)}
+.nav-links{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--muted);text-decoration:none;font-weight:600}
+.hero{margin-top:12px;background:linear-gradient(90deg, rgba(0,161,75,0.08), rgba(170,223,187,0.03));padding:28px;border-radius:12px}
+.hero h1{margin:0;font-size:28px}
+.lead{color:var(--muted);margin-top:8px}
+.hero-cta{margin-top:12px;display:flex;gap:10px}
+.btn{background:var(--accent);color:#072211;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;border:1px solid rgba(170,223,187,0.15);color:var(--accent-2)}
+.container{display:grid;grid-template-columns:1fr;gap:18px;padding:18px}
+.panel{background:var(--card);padding:14px;border-radius:10px}
+.players-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.player-card{padding:12px;border-radius:8px;background:var(--glass);display:flex;flex-direction:column;gap:6px}
+.player-card .number{font-weight:800;color:var(--accent)}
+.search-row input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.schedule-table{width:100%;border-collapse:collapse;margin-top:10px}
+.schedule-table th,.schedule-table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:8px;min-width:160px}
+.card h4{margin:0 0 6px;color:var(--muted)}
+.chart-card{background:transparent;padding:12px;border-radius:10px;margin-top:12px}
+.site-footer{text-align:center;padding:12px;color:var(--muted);margin-top:18px}
+
+@media (max-width:900px){
+  .hero h1{font-size:20px}
+  .nav-links{display:none}
+}

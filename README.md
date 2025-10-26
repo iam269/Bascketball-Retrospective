@@ -1,16 +1,18 @@
-# Retrospectivă Baschet — site demo
+# 🏀 Basketball Retrospective — Interactive Demo Site
 
-Mic site static pentru vizualizare rapidă a unor statistici și timeline de meciuri.
+Welcome to this small static site dedicated to basketball fans! 🎉 Here you can quickly view essential statistics and a detailed timeline of matches, all in a simple and attractive way. 📊⏱️
 
-Fișiere:
+## 🚀 Live Demo
+Access the live version of the site here: [https://iam269.github.io/Bascketball-Retrospective/](https://iam269.github.io/Bascketball-Retrospective/)
 
- Acest proiect folosește acum doar HTML, CSS și JS.
+## 📁 Project Files
+This project now uses only HTML, CSS, and vanilla JavaScript. 🛠️
 
- Datele au fost incorporate direct în `script.js` (nu mai e nevoie de fișier JSON extern).
+The data has been incorporated directly into `script.js` (no more need for an external JSON file). 💾
 
- Fișiere relevante:
- - index.html
- - styles.css
- - script.js
+Relevant files:
+- `index.html` - Main page structure 🌐
+- `styles.css` - Styles for attractive visual design 🎨
+- `script.js` - JavaScript logic for interactivity ⚡
 
- Dacă dorești să elimin complet acest fișier, spune-mi și îl voi șterge.
+If you want to completely remove this file, let me know and I'll delete it. 🗑️
